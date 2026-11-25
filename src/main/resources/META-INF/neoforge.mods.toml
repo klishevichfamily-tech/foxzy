@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="foxzy"
+version="${version}"
+displayName="Foxzy"
+authors="Foxed Team"
+description='''Adaptive chunk distances for Minecraft 1.21.1. Reduces server view distance during sustained tick load and client render distance during sustained low FPS. Experimental; Sable runtime compatibility is not yet verified.'''
+
+[[dependencies.foxzy]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.235,21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.foxzy]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
