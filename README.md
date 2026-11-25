@@ -46,7 +46,7 @@ gradle runClient
 gradle runServer
 ```
 
-The server run requires you to read and accept Mojang's EULA yourself. Build output: `build/libs/`. `gradle build` also runs the dependency-free controller regression tests (bounds, cooldown, recovery, hysteresis, invalid inputs, and rebasing). A successful build proves compilation, not runtime compatibility or measured performance.
+The server run requires you to read and accept Mojang's EULA yourself. Build output: `build/libs/`. `gradle build` also runs the JUnit controller regression tests (bounds, cooldown, recovery, hysteresis, invalid inputs, and rebasing). A successful build proves compilation, not runtime compatibility or measured performance.
 
 ## License and development status
 

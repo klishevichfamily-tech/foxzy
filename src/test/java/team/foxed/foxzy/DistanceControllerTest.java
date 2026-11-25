@@ -1,10 +1,13 @@
 package team.foxed.foxzy;
 
+import org.junit.jupiter.api.Test;
+
 public final class DistanceControllerTest {
     private static void equal(int actual, int expected, String message) {
         if (actual != expected) throw new AssertionError(message + ": " + actual + " != " + expected);
     }
-    public static void main(String[] args) {
+    @Test
+    public void adaptiveDistanceRegression() {
         DistanceController c = new DistanceController(10, 0, 10);
         equal(c.sample(60, 45, 30, 6, 3, 6, 5, 10), 10, "warmup");
         for (long now = 10; now < 12; now++) equal(c.sample(60, 45, 30, 6, 3, 6, now, 10), 10, "sustained overload needed");
